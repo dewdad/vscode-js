@@ -1,0 +1,26 @@
+{
+  "name": "mymodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "clean": "rimraf build/*",
+    "build": "babel src/ -d build -s --copy-files",
+    "watch": "npm run build -- -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-modern-node": "*",
+    "babel-preset-stage-3": "*"
+  },
+  "babel": {
+    "presets": [
+      "modern-node",
+      "stage-3"
+    ]
+  }
+}
